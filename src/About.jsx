@@ -1,12 +1,19 @@
-import React from "react"
+import React from "react";
+import web from "../src/Images/About2.jpg";
+import { NavLink } from "react-router-dom";
+import Common from "./Common";
 
 function About() {
-
   return (
     <>
-      <h1>Welcome About Page</h1>
+      <Common
+        name="Welcome to About page "
+        imgsrc={web}
+        visit="/contact"
+        btname="Contact Now"
+      />
     </>
-  )
+  );
 }
 
-export default About
+export default About;
